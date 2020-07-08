@@ -1,0 +1,15 @@
+# Global
+quarkus:
+  ssl:
+    native: true
+  native:
+    enable-all-security-services: true
+    auto-service-loader-registration: false
+    enable-reports: true
+    report-exception-stack-traces: true
+    additional-build-args: -H:+TraceClassInitialization,-H:+PrintClassInitialization, -H:ReflectionConfigurationFiles=reflect-config.json, -H:-UseServiceLoaderFeature, --initialize-at-run-time=com.hivemq.client.internal.mqtt.codec.encoder.MqttPingReqEncoder\,com.hivemq.client.internal.mqtt.codec.encoder.mqtt3.Mqtt3DisconnectEncoder
+  http:
+    port: 8080
+    test-port: 8083
+
+

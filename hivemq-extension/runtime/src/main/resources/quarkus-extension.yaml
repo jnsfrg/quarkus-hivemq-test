@@ -1,0 +1,9 @@
+name: "HiveMQ - Client"
+metadata:
+  keywords:
+    - "mqtt"
+    - "hivemq"
+  guide: "https://quarkus.io/guides/datasource"
+  categories:
+    - "messaging"
+  status: "preview"
