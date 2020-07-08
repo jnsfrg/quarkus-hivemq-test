@@ -1,3 +1,22 @@
+# Native Build Error:
+
+Error: Classes that should be initialized at run time got initialized during image building:
+ com.hivemq.client.internal.mqtt.codec.encoder.mqtt3.Mqtt3DisconnectEncoder the class was requested to be initialized at build time (from the command line).
+ 
+com.hivemq.client.internal.mqtt.codec.encoder.mqtt3.Mqtt3DisconnectEncoder has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of com.hivemq.client.internal.mqtt.codec.encoder.mqtt3.Mqtt3DisconnectEncoder
+
+com.hivemq.client.internal.mqtt.codec.encoder.MqttPingReqEncoder the class was requested to be initialized at build time (from the command line). com.hivemq.client.internal.mqtt.codec.encoder.MqttPingReqEncoder has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of com.hivemq.client.internal.mqtt.codec.encoder.MqttPingReqEncoder
+
+io.netty.buffer.UnpooledDirectByteBuf the class was requested to be initialized at build time (subtype of io.netty.buffer.AbstractReferenceCountedByteBuf). io.netty.buffer.UnpooledDirectByteBuf has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of io.netty.buffer.UnpooledDirectByteBuf
+
+io.netty.buffer.UnpooledUnsafeDirectByteBuf the class was requested to be initialized at build time (subtype of io.netty.buffer.AbstractReferenceCountedByteBuf). io.netty.buffer.UnpooledUnsafeDirectByteBuf has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of io.netty.buffer.UnpooledUnsafeDirectByteBuf
+
+io.netty.buffer.AbstractReferenceCountedByteBuf the class was requested to be initialized at build time (from the command line). io.netty.buffer.AbstractReferenceCountedByteBuf has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of io.netty.buffer.AbstractReferenceCountedByteBuf
+
+io.netty.buffer.UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeDirectByteBuf the class was requested to be initialized at build time (subtype of io.netty.buffer.AbstractReferenceCountedByteBuf). io.netty.buffer.UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeDirectByteBuf has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. Try avoiding to initialize the class that caused initialization of io.netty.buffer.UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeDirectByteBuf
+
+
+
 # native-test project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
